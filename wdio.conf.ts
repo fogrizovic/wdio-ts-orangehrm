@@ -119,7 +119,7 @@ export const config: WebdriverIO.Config = {
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 1,
+    specFileRetries: 1,
     //
     // Delay in seconds between the spec file retry attempts
     // specFileRetriesDelay: 0,
@@ -143,7 +143,7 @@ export const config: WebdriverIO.Config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         timeout: 5 * 60 * 1000,
-        grep: process.env.TAG || '',
+        grep: process.env.TAG,
     },
 
     //
